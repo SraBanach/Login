@@ -29,6 +29,10 @@
         <input type="password" class="form-control" name="password">
         <br>
         <input class="btn btn-success" type="submit">
+        <br> 
+        <button type="button" class="btn btn-light">Cadastrar</button>
+        
+
 
     </form>
 </body>
