@@ -30,7 +30,13 @@
         <br>
         <input class="btn btn-success" type="submit">
         <br> 
-        <button type="button" class="btn btn-light">Cadastrar</button>
+        <!-- como colocar um link diferente para cada aluno depois da interrogacao passamos os parametros. -->
+                <!-- metodo get colocar url do arquivo depois coloco a interrogacao para separar... 
+                lado esquerdo  arquivo, lado direiro variavel -->
+
+                <!-- link estilizado como botao do bootstrap 
+                href="./ficha.php?id_aluno=<//?= $linha['id'] ?>": Define o destino do link, passando o ID do aluno dinamicamente via URL. -->
+        <a class="btn btn-primary" href="./telaCadastro.php?= $linha['id'] ?>" role="button">Cadastrar</a>
         
 
 
