@@ -17,6 +17,10 @@
         form {
             width: 500px;
         }
+        . { 
+            display: flex;
+            justify-content: center;
+        }
     </style>
 <body>
 
@@ -37,6 +41,8 @@
                 <!-- link estilizado como botao do bootstrap 
                 href="./ficha.php?id_aluno=<//?= $linha['id'] ?>": Define o destino do link, passando o ID do aluno dinamicamente via URL. -->
         <a class="btn btn-primary" href="./telaCadastro.php?= $linha['id'] ?>" role="button">Cadastrar</a>
+        <br>
+        <a class="btn btn-primary" href="#.php?= $linha['id'] ?>" role="button">Esqueci a senha</a>
         
 
 
