@@ -89,8 +89,8 @@ $resultado = $banco->query($select)->fetchAll();
                 <!-- link estilizado como botao do bootstrap 
                 href="./ficha.php?id_aluno=<//?= $linha['id'] ?>": Define o destino do link, passando o ID do aluno dinamicamente via URL. -->
                 <a class="btn btn-primary" href="./ficha.php?id_pessoa=<?= $linha['id'] ?>" role="button">Abrir</a>
-                <a class="btn btn-warning" href="./formulario-editar.php?id_aluno_alterar=<?= $linha['id'] ?>" role="button">Editar</a>
-                <a class="btn btn-danger" href="./aluno-deletar.php?id=<?= $linha['id'] ?>" role="button">Excluir</a>
+                <a class="btn btn-warning" href="./formulario-editar.php?id_pessoa_alterar=<?= $linha['id'] ?>" role="button">Editar</a>
+                <a class="btn btn-danger" href="./pessoa-deletar.php?id=<?= $linha['id'] ?>" role="button">Excluir</a>
                 </td>
             </tr>
         <?php } ?>
