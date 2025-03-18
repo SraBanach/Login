@@ -26,6 +26,8 @@
 
             <input type="text" placeholder="Insira o cpf" name="cpf" class="form-control"><br>
 
+            <input type="text" placeholder="Insira sua nova senha" name="senha" class="form-control"><br>
+
             <input type="submit" class="btn btn-primary" class="text-center">
         </form>
     </div>
