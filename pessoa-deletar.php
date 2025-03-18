@@ -1,6 +1,6 @@
 <?php
  
-echo'<h1>Aluno deletar</h1>';
+echo'<h1> deletar</h1>';
 // o titulo aluno deletar aparece na pagina.
  
 $dsn = 'mysql:dbname=db_login;host=127.0.0.1';
@@ -44,9 +44,9 @@ $box->execute([
  
 echo
 '<script>
-    alert("Aluno apagado com sucesso!!!")
-    // aparecer uma mensagem de aluno apagado com sucesso
-    window.location.replace("index.php")
+    alert("Usuario apagado com sucesso!!!")
+    // aparecer uma mensagem de  apagado com sucesso
+    window.location.replace("loginSucesso.php")
  
 </script>';
  

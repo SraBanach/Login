@@ -1,10 +1,10 @@
 <?php 
 // 
-echo '<h1>Cadastro</h1>';
+//echo '<h1>Cadastro</h1>';
 // ordem importa o <pre> precisa estar encima do vardump
 echo '<pre>';
 // $_post -> variavel global, ela funciona em todo o projeto.
-var_dump($_POST);
+//var_dump($_POST);
 // visualizar a variavel global $_POST
 
 $nomeFormulario = $_POST['nome'];
@@ -53,7 +53,7 @@ $bancoprepara->execute([
 // ---------------------------------------------------------------
 $id= $banco -> lastInsertId();
 
-echo $id;
+//echo $id;
 
 
 $insert = 'INSERT INTO tb_usuario (usuario,senha,id_pessoa) VALUES (:usuario, :senha, :id_pessoa)' ;
@@ -85,7 +85,7 @@ $box->execute([
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Cadastro de Usuário</title>
 </head>
-<body class="d-flex justify-content-center align-items-center" style="height: 150vh; background-color: #0e0e0e; color: #f2f2f2;">
+<body class="d-flex justify-content-center align-items-center" style="height: 200vh; background-color: #0e0e0e; color: #f2f2f2;">
     <form action="cadastro.php" method="POST" class="p-4 rounded shadow bg-dark text-light" style="width: 600px;">
         <br>
         <h2 class="text-center">Cadastro</h2>
@@ -93,19 +93,19 @@ $box->execute([
         
         <div class="mb-3">
             <label class="form-label">Nome:</label>
-            <input type="text" placeholder="nome completo" name="nome" class="form-control"><br>
+            <input type="text" placeholder="nome completo" name="nome" class="form-control" required><br>
         </div>
         <div class="mb-3">
             <label class="form-label">Ano de Nascimento:</label>
-            <input type="date" placeholder="xxxx" name="ano_nascimento" class="form-control"><br>
+            <input type="date" placeholder="xxxx" name="ano_nascimento" class="form-control" required><br>
         </div>
         <div class="mb-3">
             <label class="form-label">CPF:</label>
-            <input type="number" placeholder="xxx.xxx.xxx-xx" name="cpf" class="form-control"><br>
+            <input type="number" placeholder="xxx.xxx.xxx-xx" name="cpf" class="form-control" required><br>
         </div>
         <div class="mb-3">
             <label class="form-label">Telefone 1:</label>
-            <input type="number" placeholder="(xx)x-xxxx-xxxx" name="telefone_1" class="form-control"><br>
+            <input type="number" placeholder="(xx)x-xxxx-xxxx" name="telefone_1" class="form-control"required ><br>
         </div>
         <div class="mb-3">
             <label class="form-label">Telefone 2:</label>
@@ -113,23 +113,23 @@ $box->execute([
         </div>
         <div class="mb-3">
             <label class="form-label">Logradouro:</label>
-            <input type="text" placeholder="logradouro" name="logradouro" class="form-control"><br>
+            <input type="text" placeholder="logradouro" name="logradouro" class="form-control"required ><br>
         </div>
         <div class="mb-3">
             <label class="form-label">Número da Casa:</label>
-            <input type="number" placeholder="N° Casa" name="n_casa" class="form-control"><br>
+            <input type="number" placeholder="N° Casa" name="n_casa" class="form-control" required><br>
         </div>
         <div class="mb-3">
             <label class="form-label">Bairro:</label>
-            <input type="text" placeholder="bairro" name="bairro" class="form-control"><br>
+            <input type="text" placeholder="bairro" name="bairro" class="form-control" required><br>
         </div>
         <div class="mb-3">
             <label class="form-label">Cidade:</label>
-            <input type="text" placeholder="cidade" name="cidade" class="form-control"><br>
+            <input type="text" placeholder="cidade" name="cidade" class="form-control"required><br>
         </div>
         <div class="mb-3">
             <label class="form-label">Usuário:</label>
-            <input type="text" placeholder="usuario" name="usuario" class="form-control"><br>
+            <input type="text" placeholder="usuario" name="usuario" class="form-control"required><br>
         </div>
         <div class="mb-3">
             <label class="form-label">Senha:</label>
@@ -147,5 +147,6 @@ $box->execute([
             }
         });
     </script>
+
 </body>
 </html>
