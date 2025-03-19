@@ -61,6 +61,10 @@ echo '<h1> AuxLogin.php </h1>';
     if (!empty($resultado)&& $resultado != false){ 
         header ('location:loginSucesso.php'); 
 
-    }   else { 
-        header('location:index.php'); 
+    }   else {    
+        echo"    
+        <script>
+            alert('Senha ou CPF inválidos');
+        </script>";
+        header('location:index.php');
     }

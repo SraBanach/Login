@@ -1,10 +1,5 @@
 
-
-
-
-
-
-
+<h1> Bem vindo! 
 
     <!-- tela usuario;  -->
 
@@ -53,8 +48,10 @@ $resultado = $banco->query($select)->fetchAll();
 ?>
 
 <!-- my-5 para dar um espaço margin -->
- <!-- Aplica uma margem vertical (superior e inferior)  -->
+<!-- Aplica uma margem vertical (superior e inferior)  -->
 <main class="container my-5"> 
+
+</style>
         
     <table class="table table-striped">
         <!-- tabela estilizada pelo bootstrap -->
@@ -63,7 +60,7 @@ $resultado = $banco->query($select)->fetchAll();
             d-flex: A classe d-flex aplica o estilo de flexbox ao contêiner, permitindo alinhar seus itens de forma flexível.
             justify-content-end: Alinha os itens dentro do contêiner para o final da linha (à direita no caso de layout horizontal). -->
 
-            <a href="formulario.php" class="btn btn-sucess"> Cadastrar Novo Aluno </a>
+            <a href="cadastro.php" class="btn btn-sucess"> Cadastrar </a>
             <!-- link da pagina cadastrar aluno -->
         </div>
         <tr> 

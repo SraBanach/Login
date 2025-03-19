@@ -60,7 +60,7 @@ $dados= $banco->query($select)->fetch();
             <input type="text" value= "<?= $dados ['bairro'] ?>"  class="form-control"><br>
             <input type="text" value= "<?= $dados ['cidade'] ?>"  class="form-control"><br>
             <input type="text" value= "<?= $dados ['usuario'] ?>" disabled class="form-control"><br>
-            <input type="text" value= "<?= $dados ['senha'] ?>"  class="form-control"><br>
+            <input type="text" value= "<?= $dados ['senha'] ?>"  diseabled class="form-control"><br>
             <input type="submit">
         </form>
     </div>
