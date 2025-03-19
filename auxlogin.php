@@ -26,28 +26,28 @@ echo '<h1> AuxLogin.php </h1>';
     $status = $resultado ['status'];
     ?>
     <!-- abrir e fechar a tag para colocar um html dentro dela, assim ele nao aparece nem no dev tolls -->
+    
+
+
+
+
+
+
+
+
+
+
+
     <?php if($status == 'admin') { ?>
 
     
-        <h1>Bem vindo USUARIO ADMIN</h1>
-    <?php } ?>
+<h1>Bem vindo USUARIO ADMIN</h1>
+<?php } ?>
 
 
-    <h1>bem vindo USUARIO COMUM</h1>
-    <!-- ternario é uma condicao abre e fecha na mesma linha 
-    é um if simplificado, ultilizado em apenas uma linha;  -->
-
-
-
-
-
-
-
-
-
-
-
-
+<h1>bem vindo USUARIO COMUM</h1>
+<!-- ternario é uma condicao abre e fecha na mesma linha 
+é um if simplificado, ultilizado em apenas uma linha;  -->
 
 
 
